@@ -21,7 +21,7 @@ function Navbar() {
                 {/* <Project /> */}
             </Tab>
             <Tab eventKey="longer-tab" title="Contact Me">
-                {/* <Contact /> */}
+                <Contact />
             </Tab>
             <Tab eventKey="contact" title="Resume">
                 {/* <Resume /> */}

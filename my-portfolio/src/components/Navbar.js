@@ -15,7 +15,7 @@ function MyNavbar() {
             fill
         >
             <Tab eventKey="home" title="About Me">
-                {/* <AboutMe /> */}
+                <AboutMe />
             </Tab>
             <Tab eventKey="profile" title="Portfolio">
                 {/* <Portfolio /> */}

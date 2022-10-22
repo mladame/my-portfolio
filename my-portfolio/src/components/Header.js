@@ -3,8 +3,8 @@ import '../styles/Header.css';
 
 function Header() {
     return (
-        <header style={styles.headerStyle} className="header">
-            <h1 style={styles.headingStyle}>Welcome</h1>
+        <header  className="header">
+            <h1 >Martha Adame</h1>
         </header>
     );
 }

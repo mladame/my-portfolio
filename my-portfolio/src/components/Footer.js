@@ -10,6 +10,7 @@ function Footer() {
                 <Card.Text>
                     With supporting text below as a natural lead-in to additional content.
                 </Card.Text>
+                {/* add links: github, linkedin, etc. */}
             </Card.Body>
         </Card>
     );

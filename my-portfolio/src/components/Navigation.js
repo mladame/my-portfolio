@@ -2,11 +2,11 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
 import AboutMe from "./AboutMe";
-import Portfolio from "./Portfolio";
+import Project from "./Project";
 import Contact from "./Contact";
 import Resume from "./Resume";
 
-function MyNavbar() {
+function Navbar() {
     return (
         <Tabs
             defaultActiveKey="profile"
@@ -17,8 +17,8 @@ function MyNavbar() {
             <Tab eventKey="home" title="About Me">
                 <AboutMe />
             </Tab>
-            <Tab eventKey="profile" title="Portfolio">
-                {/* <Portfolio /> */}
+            <Tab eventKey="profile" title="Project">
+                {/* <Project /> */}
             </Tab>
             <Tab eventKey="longer-tab" title="Contact Me">
                 {/* <Contact /> */}
@@ -30,4 +30,4 @@ function MyNavbar() {
     );
 }
 
-export default MyNavbar;
+export default Navbar;

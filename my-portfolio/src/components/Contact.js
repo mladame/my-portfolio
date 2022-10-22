@@ -3,6 +3,24 @@ import { send } from 'emailjs-com';
 import '../styles/Contact.js';
 
 function ContactForm() {
+    // Declare state variable toSend, set initial values to null
+    const [toSend, setToSend] = useState({
+        from_name: '',
+        reply_to: '',
+        message: '',
+    });
+
+    // When user clicks submit, use emailjs to send email with input values
+    const onSubmit = (e) => {
+        e.preventDefault();
+        {/* --- METHOD TO SEND THE MAIL --- */ }
+    };
+
+    // Helper function, set data toSend, target names = target values
+    const handleChange = (e) => {
+        setToSend({ ...toSend, [e.target.name]: e.target.value });
+    };
+
     retun(
         <div className='contactContainer'>
             {/* when user clicks submit, call onSubmit to send email */}
@@ -31,7 +49,7 @@ function ContactForm() {
                     value={toSend.message}
                     onChange={handleChange}
                 />
-                <button type="submit"/>Submit<button />
+                <button type="submit" />Submit<button />
             </form>
         </div>
     );

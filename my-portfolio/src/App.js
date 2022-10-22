@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer"
+import Footer from "./components/Footer"
 
 // Render Portfolio components
 function App() {
@@ -9,12 +9,7 @@ function App() {
         <div>
             <Header />
             <Navbar />
-            {/* 
-            <AboutMe />
-            <Portfolio />
-            <Contact />
-            <Resume />
-            <Footer /> */}
+            <Footer />
         </div>
     );
 }

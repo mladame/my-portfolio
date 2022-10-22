@@ -10,10 +10,21 @@ function ContactForm() {
         message: '',
     });
 
-    // When user clicks submit, use emailjs to send email with input values
+    // When user clicks submit, use emailjs to send email with input values, connect to emailjs
     const onSubmit = (e) => {
         e.preventDefault();
-        {/* --- METHOD TO SEND THE MAIL --- */ }
+        send(
+            'service_pdewh2b',
+            'template_18byp09',
+            toSend,
+            'PqDZjGsA-hEuMOMZ5'
+        )
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+            })
+            .catch((err) => {
+                console.log('FAILED...', err);
+            });
     };
 
     // Helper function, set data toSend, target names = target values

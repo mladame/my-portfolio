@@ -2,7 +2,7 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
 import AboutMe from "./AboutMe";
-import Project from "./Project";
+import ProjectContainer from "./ProjectContainer";
 import Contact from "./Contact";
 import Resume from "./Resume";
 
@@ -17,8 +17,8 @@ function Navbar() {
             <Tab eventKey="home" title="About Me">
                 <AboutMe />
             </Tab>
-            <Tab eventKey="profile" title="Project">
-                {/* <Project /> */}
+            <Tab eventKey="profile" title="Projects">
+                {/* <ProjectContainer /> */}
             </Tab>
             <Tab eventKey="longer-tab" title="Contact Me">
                 <Contact />

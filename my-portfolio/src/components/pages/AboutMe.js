@@ -1,13 +1,13 @@
 import React from "react";
-import '../styles/AboutMe.css';
-import PortfolioImage from "../assets/user-image.jpg";
+// import '../styles/AboutMe.css';
+import PortfolioImage from "../../assets/images/user-image.jpg";
 
 function AboutMe() {
 
     return (
         <div>
             <h1 >About Me</h1>
-            <img src={PortfolioImage} alt="Portfolio Image" />;
+            <img src={PortfolioImage} alt="Martha Adame" />;
             <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab

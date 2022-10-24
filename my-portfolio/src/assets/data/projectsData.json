@@ -1,0 +1,46 @@
+{
+    "projects": [
+        {
+            "image": "url",
+            "title": "Weather Report",
+            "description": "enter description",
+            "repo": "link",
+            "deployedLink": "link"
+        },
+        {
+            "image": "url",
+            "title": "Work Day Scheduler",
+            "description": "enter description",
+            "repo": "link",
+            "deployedLink": "link"
+        },        
+        {
+            "image": "url",
+            "title": "Note Taker",
+            "description": "enter description",
+            "repo": "link",
+            "deployedLink": "link"
+        },        
+        {
+            "image": "url",
+            "title": "Password Generator",
+            "description": "enter description",
+            "repo": "link",
+            "deployedLink": "link"
+        },        
+        {
+            "image": "url",
+            "title": "Code Quiz",
+            "description": "enter description",
+            "repo": "link",
+            "deployedLink": "link"
+        },        
+        {
+            "image": "url",
+            "title": "README Generator",
+            "description": "enter description",
+            "repo": "link",
+            "deployedLink": "link"
+        }
+    ]
+}

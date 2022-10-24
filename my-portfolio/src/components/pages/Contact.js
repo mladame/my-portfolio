@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { send } from 'emailjs-com';
-import '../styles/Contact.css';
+// import '../styles/Contact.css';
 
 function ContactForm() {
     // Declare state variable toSend, set initial values to null
@@ -31,6 +31,13 @@ function ContactForm() {
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
+
+    // empty fields after email is sent
+    setToSend({
+        from_name: '',
+        reply_to: '',
+        message: '',
+    })
 
     return(
         <div className='contactContainer'>

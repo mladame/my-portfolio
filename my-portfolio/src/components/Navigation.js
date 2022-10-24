@@ -1,13 +1,13 @@
+import React from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import Nav from 'react-bootstrap/Nav';
 
 import AboutMe from "./pages/AboutMe";
 import Project from './pages/Project';
 import Contact from "./pages/Contact";
-import Resume from "./pages/Resume";
+// import Resume from "./pages/Resume";
 
-function Navbar() {
+function Navigation() {
     return (
 
         <Tabs
@@ -20,10 +20,10 @@ function Navbar() {
                 <AboutMe />
             </Tab>
             <Tab eventKey="profile" title="Projects">
-                {/* <Projects /> */}
+                <Project />
             </Tab>
             <Tab eventKey="longer-tab" title="Contact Me">
-                <Contact />
+                {/* <Contact /> */}
             </Tab>
             <Tab eventKey="contact" title="Resume">
                 {/* <Resume /> */}
@@ -32,4 +32,4 @@ function Navbar() {
     );
 }
 
-export default Navbar;
+export default Navigation;

@@ -5,7 +5,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import AboutMe from "./pages/AboutMe";
 import Project from './pages/Project';
 import Contact from "./pages/Contact";
-// import Resume from "./pages/Resume";
+import Resume from "./pages/Resume";
 
 function Navigation() {
     return (
@@ -26,7 +26,7 @@ function Navigation() {
                 {/* <Contact /> */}
             </Tab>
             <Tab eventKey="contact" title="Resume">
-                {/* <Resume /> */}
+                <Resume />
             </Tab>
         </Tabs>
     );

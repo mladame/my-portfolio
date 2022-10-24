@@ -3,7 +3,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import Nav from 'react-bootstrap/Nav';
 
 import AboutMe from "./pages/AboutMe";
-import ProjectContainer from "./pages/ProjectContainer";
+import Project from './pages/Project';
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
@@ -20,7 +20,7 @@ function Navbar() {
                 <AboutMe />
             </Tab>
             <Tab eventKey="profile" title="Projects">
-                {/* <ProjectContainer /> */}
+                {/* <Projects /> */}
             </Tab>
             <Tab eventKey="longer-tab" title="Contact Me">
                 <Contact />

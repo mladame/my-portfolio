@@ -37,6 +37,6 @@
             "description": "enter description",
             "repo": "link",
             "deployedLink": "link"
-        },
+        }
     ]
 }

@@ -1,13 +1,15 @@
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import Nav from 'react-bootstrap/Nav';
 
-import AboutMe from "./AboutMe";
-import ProjectContainer from "./ProjectContainer";
-import Contact from "./Contact";
-import Resume from "./Resume";
+import AboutMe from "./pages/AboutMe";
+import ProjectContainer from "./pages/ProjectContainer";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 function Navbar() {
     return (
+
         <Tabs
             defaultActiveKey="profile"
             id="fill-tab-example"

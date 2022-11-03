@@ -1,6 +1,6 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
-import github from "../../assets/images/GitHub-Mark-32px.png";
+// import github from "../../assets/images/GitHub-Mark-32px.png";
 import projectsData from "../../assets/data/projectsData.json";
 // import '../styles/';
 

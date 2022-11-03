@@ -1,8 +1,7 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 // import github from '../assets/images/GitHub-Mark-32px.png';
-// import linkedin from "../assets/images/LI-In-Bug.png"
-// import '../styles/Footer.css';
+// import linkedin from "../assets/images/LI-In-Bug.png";
 
 function Footer() {
     return (

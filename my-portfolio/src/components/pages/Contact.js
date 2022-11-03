@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { send } from 'emailjs-com';
-// import '../styles/Contact.css';
 
 function ContactForm() {
     // Declare state variable toSend, set initial values to null
@@ -21,6 +20,11 @@ function ContactForm() {
         )
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
+                setToSend({
+                    from_name: '',
+                    reply_to: '',
+                    message: '',
+                })
             })
             .catch((err) => {
                 console.log('FAILED...', err);
@@ -32,12 +36,16 @@ function ContactForm() {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
 
-    // empty fields after email is sent
-    setToSend({
-        from_name: '',
-        reply_to: '',
-        message: '',
-    })
+    const emailValidation = (from_name, reply_to, message) => {
+        const emailRegex = "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/";
+
+        if(from_name && reply_to && message){
+            const email = toLowerCase(reply_to);
+            email.match(emailRegex)
+            console.log('SUCCESS!')
+        }
+        
+    }
 
     return(
         <div className='contactContainer'>

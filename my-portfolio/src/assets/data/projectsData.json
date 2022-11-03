@@ -4,43 +4,43 @@
             "image": "url",
             "title": "Weather Report",
             "description": "enter description",
-            "repo": "link",
-            "deployedLink": "link"
+            "repo": "https://github.com/mladame/weather-dashboard",
+            "deployedLink": "https://github.com/mladame/weather-dashboard/actions/runs/3088026777/jobs/4994034948"
         },
         {
             "image": "url",
-            "title": "Work Day Scheduler",
+            "title": "Orbital Odyssey",
             "description": "enter description",
-            "repo": "link",
-            "deployedLink": "link"
+            "repo": "https://github.com/Proper-Stevo/SpaceInvaders",
+            "deployedLink": "https://stormy-sands-64982.herokuapp.com/"
         },        
         {
             "image": "url",
             "title": "Note Taker",
             "description": "enter description",
-            "repo": "link",
-            "deployedLink": "link"
+            "repo": "https://github.com/mladame/note-taker",
+            "deployedLink": "https://dry-ocean-42123.herokuapp.com/"
         },        
         {
             "image": "url",
-            "title": "Password Generator",
+            "title": "Work Day Scheduler",
             "description": "enter description",
-            "repo": "link",
-            "deployedLink": "link"
+            "repo": "https://github.com/mladame/work-day-scheduler",
+            "deployedLink": "https://mladame.github.io/work-day-scheduler/"
         },        
         {
             "image": "url",
             "title": "Code Quiz",
             "description": "enter description",
-            "repo": "link",
-            "deployedLink": "link"
+            "repo": "https://github.com/mladame/code-quiz",
+            "deployedLink": "https://mladame.github.io/code-quiz/"
         },        
         {
             "image": "url",
             "title": "README Generator",
             "description": "enter description",
-            "repo": "link",
-            "deployedLink": "link"
+            "repo": "https://github.com/mladame/horiseon-refactor",
+            "deployedLink": "https://mladame.github.io/horiseon-refactor/"
         }
     ]
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import './styles/Navigation.css';
 
 import AboutMe from "./pages/AboutMe";
 import Project from './pages/Project';
@@ -10,13 +9,11 @@ import Resume from "./pages/Resume";
 
 function Navigation() {
     return (
-
         <Tabs
             defaultActiveKey="profile"
             id="fill-tab-example"
             className="mb-3 nav-tabs"
-            fill
-        >
+            fill>
             <Tab eventKey="home" title="About Me">
                 <AboutMe />
             </Tab>
@@ -24,7 +21,7 @@ function Navigation() {
                 <Project />
             </Tab>
             <Tab eventKey="longer-tab" title="Contact Me">
-                {/* <Contact /> */}
+                <Contact />
             </Tab>
             <Tab eventKey="contact" title="Resume">
                 <Resume />

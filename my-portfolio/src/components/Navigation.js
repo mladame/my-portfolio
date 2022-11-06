@@ -10,20 +10,20 @@ import Resume from "./pages/Resume";
 function Navigation() {
     return (
         <Tabs
-            defaultActiveKey="profile"
+            defaultActiveKey="home"
             id="fill-tab-example"
             className="mb-3 nav-tabs"
             fill>
             <Tab eventKey="home" title="About Me">
                 <AboutMe />
             </Tab>
-            <Tab eventKey="profile" title="Projects">
+            <Tab eventKey="projects" title="Projects">
                 <Project />
             </Tab>
-            <Tab eventKey="longer-tab" title="Contact Me">
+            <Tab eventKey="contact" title="Contact Me">
                 <Contact />
             </Tab>
-            <Tab eventKey="contact" title="Resume">
+            <Tab eventKey="resume" title="Resume">
                 <Resume />
             </Tab>
         </Tabs>

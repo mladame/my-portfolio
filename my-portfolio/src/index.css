@@ -1,0 +1,92 @@
+/* ----------------ABOUT ME---------------- */
+
+
+/* ---------------CONTACT PAGE------------- */
+.contactContainer{
+    margin: auto;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.form-container {
+    max-width: 70%;
+    margin: auto;
+}
+
+.name-email {
+    margin: auto;
+    justify-content:space-around;
+}
+
+.message-submit-btn {
+    margin: auto;
+}
+
+.user-name, .user-email, .user-message{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px gray solid;
+}
+
+.user-message{
+    height: 100px;
+    width: 500px;
+}
+
+.submit-btn {
+    max-width: fit-content;
+    float: right;
+    justify-self: flex-end;
+}
+
+/* ---------------PROJECTS---------------- */
+.projects-container {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.project-card {
+    width: 400px;
+    max-width: 80%;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.img-overlay {
+    margin: 5px;
+    margin-top: 25px;
+    opacity: 0;
+    transition-timing-function: ease-in-out;
+    transition: 0.5s;
+}
+
+.project-card .img-overlay:hover {
+    opacity: 1;
+}
+
+.project-title{
+    font-size: 30px;
+}
+
+/* ---------------MEDIA QUERIES------------- */
+@media screen and (max-width: 576px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: auto;
+        margin: auto;
+        margin-right: 10px;
+        margin-left: 20px;    
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-card{
+        
+        margin: 10px 20px 10px 20px;
+    }
+}

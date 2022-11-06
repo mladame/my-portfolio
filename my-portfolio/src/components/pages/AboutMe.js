@@ -5,10 +5,10 @@ import PortfolioImage from "../../assets/images/user-image.jpg";
 function AboutMe() {
 
     return (
-        <div>
-            <h1 >About Me</h1>
-            <img src={PortfolioImage} alt="Martha Adame" />;
-            <p>
+        <div className="about-me-container">
+            <h1 className="about-me-title">About Me</h1>
+            <img className="about-me-img" src={PortfolioImage} alt="Martha Adame" />;
+            <p className="about-me-description">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
                 illo inventore veritatis et quasi architecto beatae vitae dicta sunt

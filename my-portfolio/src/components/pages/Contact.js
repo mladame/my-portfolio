@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { checkEmail } from '../../utils/helpers';
 import Button from 'react-bootstrap/Button';
 import Stack from 'react-bootstrap/Stack';
+import Alert from 'react-bootstrap/Alert';
 
 
 function ContactForm() {
@@ -28,14 +29,12 @@ function ContactForm() {
         }
     };
 
-    const onSubmit = (e) => {
-        // Preventing the default behavior of the form submit (which is to refresh the page)     
+    const onSubmit = (e) => {     
         e.preventDefault();
-        // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.     
+        // Check fields, validate email, set error message if any  
         if (!checkEmail(email) || !name || !message) {
-            setErrorMessage('Email or username is invalid');
-            // We want to exit out of this code block if something is wrong so that the user can correct it       return;       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.     
-        }
+            setErrorMessage('Please be sure to enter all fields, and use a valid email address');
+        } 
 
         setName('');
         setMessage('');

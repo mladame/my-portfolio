@@ -8,12 +8,12 @@ function AboutMe() {
 
     return (
         <Container className="about-me-container">
+            <h1 className="about-me-title">About Me</h1>
             <Row>
                 <Col>
-                    <h1 className="about-me-title">About Me</h1>
                     <img className="about-me-img" src={PortfolioImage} alt="Martha Adame" />
                 </Col>
-                <Col>
+                <Col className="about-me-des-container my-auto">
                     <p className="about-me-description">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab

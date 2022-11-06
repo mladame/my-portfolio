@@ -30,6 +30,7 @@
     justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    max-width: 90%;
 }
 
 .form-container {
@@ -48,6 +49,7 @@
 
 .user-name, .user-email, .user-message{
     margin: 10px;
+    margin-top: 30px;
     padding: 10px;
     border-radius: 5px;
     border: 2px gray solid;
@@ -55,13 +57,15 @@
 
 .user-name,
 .user-email {
-    width: 240px;
+    min-width: 300px;
+    max-width: 390px;
     line-height: 40px;
 }
 
 .user-message{
     height: 100px;
-    width: 500px;
+    min-width: 300px;
+    max-width: 800px;
     line-height: 60px;
     margin-bottom: 20px;
 }

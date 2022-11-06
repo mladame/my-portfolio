@@ -3,8 +3,6 @@ import { useState } from 'react';
 import { checkEmail } from '../../utils/helpers';
 import Button from 'react-bootstrap/Button';
 import Stack from 'react-bootstrap/Stack';
-import Alert from 'react-bootstrap/Alert';
-
 
 function ContactForm() {
 
@@ -47,7 +45,7 @@ function ContactForm() {
             <form onSubmit={onSubmit} className="form-container">
                 {/* User Name save as from_name */}
                 <Stack className='stack-container'>
-                    <div className='name-email'>
+                    <div className='name-email contact-display'>
                         <input
                             type='text'
                             name='name'
@@ -67,8 +65,8 @@ function ContactForm() {
                         />
                     </div>
                     {/* User Message */}
-                    <div className='message-submit-btn'>
-                        <Stack>
+                    <div className='message-submit-btn contact-display'>
+                        <Stack className='message-stack-container'>
                             <input
                                 type='text'
                                 name='message'

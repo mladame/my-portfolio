@@ -241,10 +241,46 @@ body {
 /* -------------------FOOTER---------------- */
 .footer-container{
     background-color: var(--lynch);
-    /* vertical-align: bottom; */
     position: relative;
     bottom: -250px;
     width: 100%;
+}
+
+.footer-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.footer-title{
+    font-size: 15px;
+}
+
+.footer-content{
+    margin: 5px 0px 10px 0px;
+    font-size: 12px;
+}
+
+.unsplash-link{
+    text-decoration: none;
+    color: #dcc6e0;
+}
+
+.unsplash-link:hover{
+    font-size: 20px;
+    color: #e3dae7;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+.footer-icon{
+    width: 40px;
+    margin: 0px 20px 0px 20px;
 }
 
 /* ---------------MEDIA QUERIES------------- */

@@ -2,12 +2,45 @@ import React from "react";
 import Card from 'react-bootstrap/Card';
 // import github from "../../assets/images/GitHub-Mark-32px.png";
 import projectsData from "../../assets/data/projectsData.json";
+import weatherReport from '../../assets/images/weather-report-screenshot.PNG';
+import horiseon from '../../assets/images/horiseon-screenshot-1200.PNG';
+import noteTaker from '../../assets/images/note taker demo.gif';
+import orbitalOdyssey from '../../assets/images/planetscreenshot.png';
+import workDay from '../../assets/images/work-day-scheduler-page.PNG';
+import codeMania from '../../assets/images/code-mania-start-page-screenshot.PNG';
 
 
 // In our return method, we use the map method to return a new array 
 function Project() {
 
-  const {projects} = projectsData
+  const { projects } = projectsData
+
+  function DisplayProject(project){
+
+  // const currentProject = projects.title;
+
+  let projectTitle = project.substring(
+    project.indexOf("'") + 1, 
+    project.lastIndexOf("'")
+  );
+
+  console.log(projectTitle);
+
+    switch(project){
+      case "Weather Report":
+        return <Card.Img src={weatherReport} alt="Weather Dashboard Project" />;
+      case "Orbital Odyssey":
+        return <Card.Img src={orbitalOdyssey} alt="Orbital Odyssey Project" />;
+      case "Note Taker":
+        return <Card.Img src={noteTaker} alt="Note Taker Project" />;
+      case "Work Day Scheduler":
+        return <Card.Img src={workDay} alt="Work Day Scheduler Project" />;
+      case "Code Mania":
+        return <Card.Img src={codeMania} alt="Coding Quiz Project" />;
+      case "Horiseon Refactor":
+        return <Card.Img src={horiseon} alt="Horiseon Refactor Project" />;
+    }
+  }
 
   // for each project return a card 
   return (
@@ -15,7 +48,8 @@ function Project() {
       {projects.map((project, index) => {
         return (
           <Card className="bg-dark text-white col project-card" key={index}>
-            <Card.Img src={projects.image} alt="Martha Adame's Project" />
+            {/* <Card.Img src={project.url} alt="Martha Adame's Project" /> */}
+            <DisplayProject project={project.title}/>
             <Card.ImgOverlay className="img-overlay">
               <Card.Title className="project-title">{project.title}</Card.Title>
               <Card.Text className="project-description">

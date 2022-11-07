@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "image": "url",
+            "url": "../../assets/images/weather-report-screenshot.PNG",
             "title": "Weather Report",
             "description": "The Daily Weather Report is a weather dashboard with a retro computer theme. The dashboard is designed for those who want to feel like, even if they survive nuclear fallout, they can still stay in tune with weather anywhere. Always looking forward to bright, sunny skies.",
             "repo": "https://github.com/mladame/weather-dashboard",
@@ -30,7 +30,7 @@
         },        
         {
             "image": "url",
-            "title": "Code Quiz",
+            "title": "Code Mania",
             "description": "A coding trivia quiz designed to test your knowledge on the basics of programming languages. Topics covered in this quiz include HTML, CSS, and Javascript!",
             "repo": "https://github.com/mladame/code-quiz",
             "deployedLink": "https://mladame.github.io/code-quiz/"

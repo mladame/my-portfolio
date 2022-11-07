@@ -10,7 +10,7 @@ import Resume from "./pages/Resume";
 function Navigation() {
     return (
         <Tabs
-            defaultActiveKey="resume"
+            defaultActiveKey="home"
             id="fill-tab-example"
             className="mb-3 nav-tabs"
             fill>

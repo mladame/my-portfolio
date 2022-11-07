@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Poiret+One&display=swap');
+
+:root{
+    --titleFont: 'Poiret One', cursive;
+    --textFont: 'Abel', sans-serif;
+}
+
+body{
+    background-image: url(./assets/images/bence-csernak-hoi9epXt_Nw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* -----------------HEADER----------------- */
+.portfolio-name{
+    font-family: var(--titleFont);
+    font-size: 50px;
+    color: antiquewhite;
+    margin: 20px;
+}
+
+/* ---------------NAVIGATION-------------- */
+.nav-tabs{
+    margin-top: 30px;
+}
+
+
+
 /* ----------------ABOUT ME---------------- */
 .about-me-container {
     max-width: 80%;

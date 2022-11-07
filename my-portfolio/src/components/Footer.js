@@ -5,10 +5,10 @@ import Card from 'react-bootstrap/Card';
 
 function Footer() {
     return (
-        <Card>
-            <Card.Body>
-                <Card.Title>Made with React and ❤️</Card.Title>
-                <Card.Text>
+        <Card className="footer-container">
+            <Card.Body className="footer-body">
+                <Card.Title className="footer-title">Made with React and ❤️</Card.Title>
+                <Card.Text className="footer-item">
                     With supporting text below as a natural lead-in to additional content.
                 </Card.Text>
                 {/* add links: github, linkedin, etc. */}

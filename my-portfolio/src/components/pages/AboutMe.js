@@ -10,7 +10,7 @@ function AboutMe() {
         <Container className="about-me-container">
             <h1 className="about-me-title">About Me</h1>
             <Row>
-                <Col>
+                <Col className="about-me-img-container">
                     <img className="about-me-img" src={PortfolioImage} alt="Martha Adame" />
                 </Col>
                 <Col className="about-me-des-container my-auto">

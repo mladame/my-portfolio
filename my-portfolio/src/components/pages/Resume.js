@@ -8,7 +8,7 @@ function Resume() {
         <div className="resume-main-container">
             <Card className="resume-card">
                 <Card.Body className="resume-link">Download My Resume</Card.Body>
-                <Button className="resume-download-btn" variant="outline-secondary">Download</Button>{' '}
+                <Button className="resume-download-btn" variant="outline-light">Download</Button>{' '}
             </Card>
             <h2 className="skills-title">My Skills</h2>
             <ListGroup variant="flush" className="listed-skills">

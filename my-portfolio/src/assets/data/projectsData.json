@@ -1,46 +1,40 @@
 {
     "projects": [
         {
-            "image": "url",
             "title": "Weather Report",
-            "description": "enter description",
-            "repo": "link",
-            "deployedLink": "link"
+            "description": "The Daily Weather Report is a weather dashboard with a retro computer theme. The dashboard is designed for those who want to feel like, even if they survive nuclear fallout, they can still stay in tune with weather anywhere. Always looking forward to bright, sunny skies.",
+            "repo": "https://github.com/mladame/weather-dashboard",
+            "deployedLink": "https://github.com/mladame/weather-dashboard/actions/runs/3088026777/jobs/4994034948"
         },
         {
-            "image": "url",
-            "title": "Work Day Scheduler",
-            "description": "enter description",
-            "repo": "link",
-            "deployedLink": "link"
+            "title": "Orbital Odyssey",
+            "description": "Space. Endless, always expanding (however that works) - the more we learn about our universe, the more we come to understand the vastness of that which we do not know. The Orbital ODYSSEY application aims shed some light on that vastness, beginning with our Solar System.",
+            "repo": "https://github.com/Proper-Stevo/SpaceInvaders",
+            "deployedLink": "https://stormy-sands-64982.herokuapp.com/"
         },        
         {
-            "image": "url",
             "title": "Note Taker",
-            "description": "enter description",
-            "repo": "link",
-            "deployedLink": "link"
+            "description": "This note taking app creates notes with a title and text, which are then saved to the page. Notes can be viewed and managed with the delete feature.",
+            "repo": "https://github.com/mladame/note-taker",
+            "deployedLink": "https://dry-ocean-42123.herokuapp.com/"
         },        
         {
-            "image": "url",
-            "title": "Password Generator",
-            "description": "enter description",
-            "repo": "link",
-            "deployedLink": "link"
+            "title": "Work Day Scheduler",
+            "description": "This webpage is useful for organizing tasks or events throughout a day. The work scheduler is color coded to track the current hour as the color red. The hours past are denoted with a gray color, while the future tasks are color coded to green. The blue button with the save icon can be used to save information for future reference.",
+            "repo": "https://github.com/mladame/work-day-scheduler",
+            "deployedLink": "https://mladame.github.io/work-day-scheduler/"
         },        
         {
-            "image": "url",
-            "title": "Code Quiz",
-            "description": "enter description",
-            "repo": "link",
-            "deployedLink": "link"
+            "title": "Code Mania",
+            "description": "A coding trivia quiz designed to test your knowledge on the basics of programming languages. Topics covered in this quiz include HTML, CSS, and Javascript!",
+            "repo": "https://github.com/mladame/code-quiz",
+            "deployedLink": "https://mladame.github.io/code-quiz/"
         },        
         {
-            "image": "url",
-            "title": "README Generator",
-            "description": "enter description",
-            "repo": "link",
-            "deployedLink": "link"
+            "title": "Horiseon Refactor",
+            "description": "A front-end business website. This refactor was completed for Horiseon's marketing agency to better access to their site by intended users. Horiseon's code can now be more easily accessed and updated for future use.",
+            "repo": "https://github.com/mladame/horiseon-refactor",
+            "deployedLink": "https://mladame.github.io/horiseon-refactor/"
         }
     ]
 }

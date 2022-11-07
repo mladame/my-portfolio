@@ -5,8 +5,10 @@ import Footer from "./components/Footer"
 // Render Portfolio components
 function App() {
     return (
-        <div>
-            <Header />
+        <div className="master-container">
+            <div>
+                <Header /> 
+            </div>
             <Footer />
         </div>
     );

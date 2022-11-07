@@ -1,73 +1,90 @@
 import { useState } from 'react';
-import { send } from 'emailjs-com';
-// import '../styles/Contact.css';
+// import { send } from 'emailjs-com';
+import { checkEmail } from '../../utils/helpers';
+import Button from 'react-bootstrap/Button';
+import Stack from 'react-bootstrap/Stack';
 
 function ContactForm() {
-    // Declare state variable toSend, set initial values to null
-    const [toSend, setToSend] = useState({
-        from_name: '',
-        reply_to: '',
-        message: '',
-    });
 
-    // When user clicks submit, use emailjs to send email with input values, connect to emailjs
-    const onSubmit = (e) => {
-        e.preventDefault();
-        send(
-            'service_pdewh2b',
-            'template_18byp09',
-            toSend,
-            'PqDZjGsA-hEuMOMZ5'
-        )
-            .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-            })
-            .catch((err) => {
-                console.log('FAILED...', err);
-            });
-    };
+    const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
+    const [message, setMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
     // Helper function, set data toSend, target names = target values
     const handleChange = (e) => {
-        setToSend({ ...toSend, [e.target.name]: e.target.value });
+
+        const { target } = e;
+        const inputType = target.name;
+        const inputValue = target.value;
+
+        if (inputType === 'email') {
+            setEmail(inputValue);
+        } else if (inputType === 'name') {
+            setName(inputValue);
+        } else {
+            setMessage(inputValue);
+        }
     };
 
-    // empty fields after email is sent
-    setToSend({
-        from_name: '',
-        reply_to: '',
-        message: '',
-    })
+    const onSubmit = (e) => {
+        e.preventDefault();
+        // Check fields, validate email, set error message if any  
+        if (!checkEmail(email) || !name || !message) {
+            setErrorMessage('Please be sure to enter all fields, and use a valid email address');
+        }
 
-    return(
+        setName('');
+        setMessage('');
+        setEmail('');
+    }
+
+    return (
         <div className='contactContainer'>
+            <div className='contact-title-container'>
+                <h2 className='contact-title title-grid'>Get in Touch</h2>
+                <div className='title-grid title-div'></div>
+                <div className='title-grid title-div'></div>
+            </div>
             {/* when user clicks submit, call onSubmit to send email */}
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} className="form-container">
                 {/* User Name save as from_name */}
-                <input
-                    type='text'
-                    name='from_name'
-                    placeholder='Your name'
-                    value={toSend.from_name}
-                    onChange={handleChange}
-                />
-                {/* User Email save as reply_to */}
-                <input
-                    type='text'
-                    name='reply_to'
-                    placeholder='Your email'
-                    value={toSend.reply_to}
-                    onChange={handleChange}
-                />
-                {/* User Message */}
-                <input
-                    type='text'
-                    name='message'
-                    placeholder='Your message'
-                    value={toSend.message}
-                    onChange={handleChange}
-                />
-                <button type="submit" />Submit<button />
+                <Stack className='stack-container'>
+                    <div className='name-email contact-display' style={{ margin: "auto" }}>
+                        <input
+                            type='text'
+                            name='name'
+                            placeholder='Your name'
+                            className='user-name'
+                            value={name}
+                            onChange={handleChange}
+                        />
+                        {/* User Email save as reply_to */}
+                        <input
+                            type='text'
+                            name='email'
+                            placeholder='Your email'
+                            className='user-email'
+                            value={email}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    {/* User Message */}
+                    <div className='message-submit-btn contact-display'>
+                        <Stack className='message-stack-container'>
+                            <input
+                                type='text'
+                                name='message'
+                                placeholder='Your message'
+                                className='user-message'
+                                value={message}
+                                onChange={handleChange}
+                            />
+                            <Button variant="secondary" type="submit" className='submit-btn'>Submit</Button>{' '}
+                        </Stack>
+                    </div>
+                </Stack>
+
             </form>
         </div>
     );

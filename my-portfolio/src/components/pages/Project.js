@@ -1,6 +1,7 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
-// import github from "../../assets/images/GitHub-Mark-32px.png";
+import github from "../../assets/images/GitHub-Mark-32px.png";
+import deployed from "../../assets/images/website-icon.png";
 import projectsData from "../../assets/data/projectsData.json";
 import weatherReport from '../../assets/images/weather-report-screenshot.PNG';
 import horiseon from '../../assets/images/horiseon-screenshot-1200.PNG';
@@ -10,32 +11,30 @@ import workDay from '../../assets/images/work-day-scheduler-page.PNG';
 import codeMania from '../../assets/images/code-mania-start-page-screenshot.PNG';
 
 
-// In our return method, we use the map method to return a new array 
+// In our return method, we use the map method to return a new card for each project
 function Project() {
 
   const { projects } = projectsData
 
-  function DisplayProject(project){
+  // render project image
+  function DisplayProject(project) {
 
-    console.log(project)
+    const eachProject = Object.values(project);
+    const thisProject = eachProject[0];
 
-  const eachProject = Object.values(project);
-  const thisProject = eachProject[0]
-  console.log(thisProject);
-
-    switch(thisProject){
+    switch (thisProject) {
       case "Weather Report":
-        return <Card.Img src={weatherReport} alt="Weather Dashboard Project" />;
+        return <Card.Img className="project-img" src={weatherReport} alt="Weather Dashboard Project" />;
       case "Orbital Odyssey":
-        return <Card.Img src={orbitalOdyssey} alt="Orbital Odyssey Project" />;
+        return <Card.Img className="project-img" src={orbitalOdyssey} alt="Orbital Odyssey Project" />;
       case "Note Taker":
-        return <Card.Img src={noteTaker} alt="Note Taker Project" />;
+        return <Card.Img className="project-img" src={noteTaker} alt="Note Taker Project" />;
       case "Work Day Scheduler":
-        return <Card.Img src={workDay} alt="Work Day Scheduler Project" />;
+        return <Card.Img className="project-img" src={workDay} alt="Work Day Scheduler Project" />;
       case "Code Mania":
-        return <Card.Img src={codeMania} alt="Coding Quiz Project" />;
+        return <Card.Img className="project-img" src={codeMania} alt="Coding Quiz Project" />;
       case "Horiseon Refactor":
-        return <Card.Img src={horiseon} alt="Horiseon Refactor Project" />;
+        return <Card.Img className="project-img" src={horiseon} alt="Horiseon Refactor Project" />;
     }
   }
 
@@ -45,16 +44,17 @@ function Project() {
       {projects.map((project, index) => {
         return (
           <Card className="bg-dark text-white col project-card" key={index}>
-            {/* <Card.Img src={project.url} alt="Martha Adame's Project" /> */}
-            <DisplayProject project={project.title}/>
+            <DisplayProject project={project.title} />
             <Card.ImgOverlay className="img-overlay">
               <Card.Title className="project-title">{project.title}</Card.Title>
               <Card.Text className="project-description">
                 {project.description}
               </Card.Text>
-              {/* <Card.Img className="project-links" src={github} href={projects.repo} alt="Project Repository" /> */}
-              {/* <Card.Img className="project-links" src={deployed} href={project.deployedLink} alt="Deployed Webpage"/> */}
-            </Card.ImgOverlay>
+              <div className="project-link-container">
+                <a href={project.repo}><Card.Img className="project-links" src={github} alt="Project Repository" /></a>
+              <a href={project.deployedLink}><Card.Img className="project-links" src={deployed}  alt="Deployed Webpage"/></a>
+              </div>
+            </Card.ImgOverlay> 
           </Card>
         );
       })}

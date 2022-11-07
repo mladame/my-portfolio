@@ -45,7 +45,7 @@ function ContactForm() {
             <form onSubmit={onSubmit} className="form-container">
                 {/* User Name save as from_name */}
                 <Stack className='stack-container'>
-                    <div className='name-email contact-display'>
+                    <div className='name-email contact-display' style={{margin:"auto"}}>
                         <input
                             type='text'
                             name='name'

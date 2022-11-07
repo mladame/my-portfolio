@@ -1,30 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Poiret+One&display=swap');
 
-:root{
+:root {
     --titleFont: 'Poiret One', cursive;
     --textFont: 'Abel', sans-serif;
+    --alabaster: #f4ede4;
 }
 
-body{
+body {
     background-image: url(./assets/images/bence-csernak-hoi9epXt_Nw-unsplash.jpg);
     background-position: center;
     background-size: cover;
+    font-family: var(--textFont);
+    color: var(--alabaster);
 }
 
 /* -----------------HEADER----------------- */
-.portfolio-name{
+.portfolio-name {
     font-family: var(--titleFont);
     font-size: 50px;
-    color: antiquewhite;
     margin: 20px;
 }
 
 /* ---------------NAVIGATION-------------- */
-.nav-tabs{
+.nav-tabs {
     margin-top: 30px;
 }
 
-
+.nav-link {
+    color: #f4ede4;
+}
 
 /* ----------------ABOUT ME---------------- */
 .about-me-container {
@@ -39,7 +43,7 @@ body{
     margin-left: 75px;
 }
 
-.about-me-img{
+.about-me-img {
     margin: auto;
     float: right;
 }
@@ -53,7 +57,7 @@ body{
 }
 
 /* ---------------CONTACT PAGE------------- */
-.contactContainer{
+.contactContainer {
     margin: auto;
     justify-content: center;
     margin-top: 100px;
@@ -62,20 +66,22 @@ body{
 }
 
 .form-container {
-    max-width: 70%;
+    max-width: 100%;
     margin: auto;
 }
 
 .name-email {
     margin: auto;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 .message-submit-btn {
     margin: auto;
 }
 
-.user-name, .user-email, .user-message{
+.user-name,
+.user-email,
+.user-message {
     margin: 10px;
     margin-top: 30px;
     padding: 10px;
@@ -90,10 +96,13 @@ body{
     line-height: 40px;
 }
 
-.user-message{
+.message-stack-contaier {
+    width: auto;
+}
+
+.user-message {
     height: 100px;
-    min-width: 300px;
-    max-width: 800px;
+    width: 620px;
     line-height: 60px;
     margin-bottom: 20px;
 }
@@ -132,7 +141,7 @@ body{
     opacity: 1;
 }
 
-.project-title{
+.project-title {
     font-size: 30px;
 }
 
@@ -141,27 +150,27 @@ body{
     margin: 100px 50px 100px 50px;
 }
 
-.resume-card{
+.resume-card {
     margin-bottom: 50px;
     padding: 5px 30px 5px 30px;
     display: grid;
     grid-template-columns: auto auto;
 }
 
-.resume-link{
+.resume-link {
     line-height: 40px;
     padding: 20px;
     font-size: 20px;
     width: fit-content;
 }
 
-.resume-download-btn{
+.resume-download-btn {
     width: fit-content;
     align-self: center;
     margin: auto;
 }
 
-.skills-title{
+.skills-title {
     margin-bottom: 25px;
 }
 
@@ -174,21 +183,37 @@ body{
 }
 
 /* ---------------MEDIA QUERIES------------- */
+@media screen and (max-width: 711px) {
+
+
+    .user-message {
+        width: 550px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .projects-container {
         display: grid;
         grid-template-columns: auto;
         margin-right: 20px;
-        margin-left: 60px;    
+        margin-left: 60px;
         justify-content: center;
         align-items: center;
     }
 
-    .project-card{
+    .project-card {
         margin: 10px 20px 10px 20px;
     }
 
-    .resume-card{
+    .resume-card {
         grid-template-columns: auto;
+    }
+
+    .name-email{
+        width: 320px;
+    }
+
+    .user-message {
+        width: 300px;
     }
 }

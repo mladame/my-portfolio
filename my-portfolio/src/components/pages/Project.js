@@ -17,16 +17,13 @@ function Project() {
 
   function DisplayProject(project){
 
-  // const currentProject = projects.title;
+    console.log(project)
 
-  let projectTitle = project.substring(
-    project.indexOf("'") + 1, 
-    project.lastIndexOf("'")
-  );
+  const eachProject = Object.values(project);
+  const thisProject = eachProject[0]
+  console.log(thisProject);
 
-  console.log(projectTitle);
-
-    switch(project){
+    switch(thisProject){
       case "Weather Report":
         return <Card.Img src={weatherReport} alt="Weather Dashboard Project" />;
       case "Orbital Odyssey":

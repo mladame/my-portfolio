@@ -109,22 +109,58 @@
 }
 
 /* -----------------RESUME----------------- */
+.resume-main-container {
+    margin: 100px 50px 100px 50px;
+}
 
+.resume-card{
+    margin-bottom: 50px;
+    padding: 5px 30px 5px 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.resume-link{
+    line-height: 40px;
+    padding: 20px;
+    font-size: 20px;
+    width: fit-content;
+}
+
+.resume-download-btn{
+    width: fit-content;
+    align-self: center;
+    margin: auto;
+}
+
+.skills-title{
+    margin-bottom: 25px;
+}
+
+.listed-skills {
+    max-width: 250px;
+}
+
+.individual-skill {
+    padding-left: 30px;
+}
 
 /* ---------------MEDIA QUERIES------------- */
 @media screen and (max-width: 576px) {
     .projects-container {
         display: grid;
         grid-template-columns: auto;
-        margin: auto;
-        margin-right: 10px;
-        margin-left: 20px;    
+        margin-right: 20px;
+        margin-left: 60px;    
         justify-content: center;
         align-items: center;
     }
 
     .project-card{
-        
         margin: 10px 20px 10px 20px;
+    }
+
+    .resume-card{
+        grid-template-columns: auto;
     }
 }

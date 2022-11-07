@@ -2,14 +2,14 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import PortfolioImage from "../../assets/images/user-image.jpg";
+import PortfolioImage from "../../assets/images/IMG_PORTFOLIO.jpg";
 
 function AboutMe() {
 
     return (
         <Container className="about-me-container">
             <h1 className="about-me-title">About Me</h1>
-            <Row>
+            <Row className="about-me-content">
                 <Col className="about-me-img-container">
                     <img className="about-me-img" src={PortfolioImage} alt="Martha Adame" />
                 </Col>

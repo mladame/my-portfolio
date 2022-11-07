@@ -54,11 +54,15 @@ body {
 
 .about-me-title {
     margin-left: 75px;
+    margin-bottom: 60px;
 }
 
 .about-me-img {
     margin: auto;
     float: right;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid rgba(244, 237, 228, .6);
 }
 
 .about-me-des-container {
@@ -211,6 +215,12 @@ body {
 
 /* ---------------MEDIA QUERIES------------- */
 @media screen and (max-width: 711px) {
+    .about-me-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
     .about-me-img-container{
         margin-top: 30px;
         display: flex;

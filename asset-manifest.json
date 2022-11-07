@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.01003a76.css",
+    "main.js": "/my-portfolio/static/js/main.8c5f0840.js",
+    "static/media/note taker demo.gif": "/my-portfolio/static/media/note taker demo.6e105587a5fe8f6f20d1.gif",
+    "static/media/planetscreenshot.png": "/my-portfolio/static/media/planetscreenshot.650c1cb9779c17b55bef.png",
+    "static/media/horiseon-screenshot-1200.PNG": "/my-portfolio/static/media/horiseon-screenshot-1200.39942081d3ec2c523111.PNG",
+    "static/media/bence-csernak-hoi9epXt_Nw-unsplash.jpg": "/my-portfolio/static/media/bence-csernak-hoi9epXt_Nw-unsplash.7ceef0fa1f7d6e1f6fa3.jpg",
+    "static/media/IMG_PORTFOLIO.jpg": "/my-portfolio/static/media/IMG_PORTFOLIO.b4951c42ad630ab553f7.jpg",
+    "static/media/weather-report-screenshot.PNG": "/my-portfolio/static/media/weather-report-screenshot.43c5b5f31c9f5ecc94ef.PNG",
+    "static/media/website-icon.png": "/my-portfolio/static/media/website-icon.3deef07e588a8f1cdbdb.png",
+    "static/media/work-day-scheduler-page.PNG": "/my-portfolio/static/media/work-day-scheduler-page.c6a47732902e6aa08c17.PNG",
+    "static/media/code-mania-start-page-screenshot.PNG": "/my-portfolio/static/media/code-mania-start-page-screenshot.0f5d613b52ad72d56ff8.PNG",
+    "index.html": "/my-portfolio/index.html",
+    "main.01003a76.css.map": "/my-portfolio/static/css/main.01003a76.css.map",
+    "main.8c5f0840.js.map": "/my-portfolio/static/js/main.8c5f0840.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01003a76.css",
+    "static/js/main.8c5f0840.js"
+  ]
+}

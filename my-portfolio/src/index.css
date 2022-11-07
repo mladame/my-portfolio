@@ -8,18 +8,24 @@
     --greenHaze: rgba(1, 152, 117,);
 }
 
-html, body{
-    height: 100%;
+#root, html, body{
+    width: 100%;
+    height: 100vh;
     margin: 0;
 }
 
 body {
-    background-image: url(./assets/images/bence-csernak-hoi9epXt_Nw-unsplash.jpg);
-    background-position: center;
+    background: url('./assets/images/bence-csernak-hoi9epXt_Nw-unsplash.jpg') no-repeat center fixed;
+    /* background-position:center; */
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
+    /* background-color: black; */
     font-family: var(--textFont);
     color: var(--alabaster);
+}
+
+.master-container{
+    height: 100%;
 }
 
 /* -----------------HEADER----------------- */
@@ -208,8 +214,9 @@ body {
 /* -------------------FOOTER---------------- */
 .footer-container{
     background-color: var(--lynch);
-    position: relative;
-    bottom:0 !important;
+    vertical-align: bottom;
+    position: relative; bottom: 0px;
+    /* bottom: 0% !important; */
     width: 100%;
 }
 

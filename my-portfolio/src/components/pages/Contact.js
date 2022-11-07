@@ -27,12 +27,12 @@ function ContactForm() {
         }
     };
 
-    const onSubmit = (e) => {     
+    const onSubmit = (e) => {
         e.preventDefault();
         // Check fields, validate email, set error message if any  
         if (!checkEmail(email) || !name || !message) {
             setErrorMessage('Please be sure to enter all fields, and use a valid email address');
-        } 
+        }
 
         setName('');
         setMessage('');
@@ -41,11 +41,16 @@ function ContactForm() {
 
     return (
         <div className='contactContainer'>
+            <div className='contact-title-container'>
+                <h2 className='contact-title title-grid'>Get in Touch</h2>
+                <div className='title-grid title-div'></div>
+                <div className='title-grid title-div'></div>
+            </div>
             {/* when user clicks submit, call onSubmit to send email */}
             <form onSubmit={onSubmit} className="form-container">
                 {/* User Name save as from_name */}
                 <Stack className='stack-container'>
-                    <div className='name-email contact-display' style={{margin:"auto"}}>
+                    <div className='name-email contact-display' style={{ margin: "auto" }}>
                         <input
                             type='text'
                             name='name'
